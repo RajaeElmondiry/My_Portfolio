@@ -201,3 +201,100 @@
   @media (prefers-reduced-motion: reduce){
     *{animation:none !important; transition:none !important;}
   }
+  /* ===========================
+   RESPONSIVE HERO IMAGE
+=========================== */
+
+@media (max-width:1024px){
+
+  .hero{
+    padding-top:160px;
+  }
+
+  .hero-image{
+    position:relative;
+    top:auto;
+    right:auto;
+    margin:0 auto 50px;
+    width:340px;
+    height:340px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+
+  .profile-photo{
+    width:230px;
+    height:230px;
+  }
+
+  .hero h1,
+  .hero p.sub{
+    max-width:100%;
+  }
+
+}
+
+@media (max-width:768px){
+
+  .hero{
+    padding:130px 0 70px;
+    text-align:center;
+  }
+
+  .hero-image{
+    width:290px;
+    height:290px;
+    margin:0 auto 35px;
+  }
+
+  .profile-photo{
+    width:200px;
+    height:200px;
+    border-width:4px;
+  }
+
+  .hero h1{
+    font-size:clamp(2rem,8vw,3rem);
+    line-height:1.15;
+  }
+
+  .hero p.sub{
+    font-size:16px;
+    margin:20px auto 0;
+  }
+
+  .hero-ctas{
+    justify-content:center;
+  }
+
+  .quickfacts{
+    grid-template-columns:1fr;
+    margin-top:45px;
+  }
+
+}
+
+@media (max-width:480px){
+
+  .hero-image{
+    width:240px;
+    height:240px;
+    margin-bottom:28px;
+  }
+
+  .profile-photo{
+    width:170px;
+    height:170px;
+  }
+
+  .hero h1{
+    font-size:32px;
+  }
+
+  .hero p.sub{
+    font-size:15px;
+    line-height:1.7;
+  }
+
+}
